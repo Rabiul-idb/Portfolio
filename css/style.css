@@ -81,7 +81,6 @@ ul{
     width: 20px;
     border-top: 5px solid var(--skin-color);
     border-left: 5px solid var(--skin-color);
-
 }
 .aside-bar .logo a::after{
     position: absolute;
@@ -214,12 +213,14 @@ ul{
     padding-top: 50px;
     
 }
-.about .abt-me{
+.about .abt-me,
+.service .service-title h2{
     display: block;
     padding: 10px 12px;
     position: relative;
 }
-.about .abt-me::after{
+.about .abt-me::after,
+.service .service-title h2::after{
     position: absolute;
     content: "";
     height: 4px;
@@ -230,7 +231,8 @@ ul{
     margin-left: 12px;
     background-color: var(--skin-color);
 }
-.about .abt-me::before{
+.about .abt-me::before,
+.service .service-title h2::before{
     position: absolute;
     content: "";
     height: 4px;
@@ -343,4 +345,40 @@ ul{
 }
 .about .education-item:last-child .education-details{
     border-bottom: none;
+}
+
+/* =========== service part ============ */
+
+.service .service-item{
+    background-color: var(--bg-black-100);
+    text-align: center;
+    padding: 15px 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 25px rgba(48, 46, 77, 0.15);
+    transition: all 0.3s ease-in;
+}
+.service .service-item:hover{
+    transform: scale(1.05);
+}
+.service .service-item .service-name{
+    text-transform: capitalize;
+    font-size: 18px;
+}
+.service .service-item .icon{
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 20px;
+    background-color: var(--skin-color);
+    color: white;
+    transition: all 0.6s ease-in;
+    margin-bottom: 10px;
+}
+.service .service-item:hover .icon{
+    transform: rotate(45deg);
+}
+.service .service-item .icon i{
+    transition: all 0.6s ease-in;
+}
+.service .service-item:hover .icon i{
+    transform: rotate(-45deg);
 }
