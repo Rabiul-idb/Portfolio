@@ -1,0 +1,72 @@
+
+@media screen and (max-width:1016.98px) {
+    .home p{
+        margin-bottom: 70px;
+    }
+    .portfolio .portfolio-item h5{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:991.98px){
+    .aside-bar{
+        left: -270px;
+    }
+    .main-content{
+        padding-left: 0;
+    }
+    .home .image::after{
+        left: 30px;
+        bottom: -30px;
+    }
+    .home .image::before{
+        right: 30px;
+        top: -30px;
+    }
+    .about .abt-item p span{
+        display: block;
+        margin-left: 0;
+    }
+   
+}
+
+@media screen and (max-width:767.98px){
+    .home .image{
+        display: none;
+    }
+    .home p{
+        padding-right: 50px;
+    }
+    .about .abt-description{
+        width: 100%;
+    }
+    .about .responsive-hide .btn-hire{
+       display: none;
+    }
+    .about .skills{
+        margin-top: 15px;
+    }
+    .about .responsive-show .btn-hire{
+        display: block;
+        display: inline-block;
+     }
+     .about .experience{
+         margin-top: 15px;
+     }
+     
+}
+
+@media screen and (max-width:575.98px){
+    .btn-hire{
+        padding: 5px 20px;
+    }
+}
+
+@media screen and (max-width:351.98px){
+    .home .pos-abs{
+        margin-top: 120px;
+    }
+    .home p{
+        margin-bottom: 40px;
+    }
+    
+}

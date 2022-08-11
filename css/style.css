@@ -38,9 +38,7 @@ ul{
     opacity: 1;
     padding: 0 30px;
 }
-#particles-js{
-    position: relative;
-}
+
 
 /* ======== aside-bar========== */
 .aside-bar{
@@ -134,9 +132,12 @@ ul{
 }
 
 /* ===========home section=========== */
+.home{
+    padding-top: 150px;
+}
 .home .pos-abs{
      position: absolute; /*for particle js */
-    margin-top: 150px;
+    
 }
 .home .hello{
     font-family: 'EB Garamond', serif;
@@ -213,14 +214,18 @@ ul{
     padding-top: 50px;
     
 }
-.about .abt-me,
-.service .service-title h2{
+.contact .section-title h2,
+.about .section-title h2,
+.service .section-title h2,
+.portfolio .section-title h2{
     display: block;
     padding: 10px 12px;
     position: relative;
 }
-.about .abt-me::after,
-.service .service-title h2::after{
+.contact .section-title h2::after,
+.about .section-title h2::after,
+.service .section-title h2::after,
+.portfolio .section-title h2::after{
     position: absolute;
     content: "";
     height: 4px;
@@ -231,8 +236,10 @@ ul{
     margin-left: 12px;
     background-color: var(--skin-color);
 }
-.about .abt-me::before,
-.service .service-title h2::before{
+.contact .section-title h2::before,
+.about .section-title h2::before,
+.service .section-title h2::before,
+.portfolio .section-title h2::before{
     position: absolute;
     content: "";
     height: 4px;
@@ -249,7 +256,7 @@ ul{
 .about .abt-description{
     color: var(--text-black-700);
     margin: 10px 0 20px 0;
-    width: 70%;
+    width: 80%;
 }
 .about .abt-item p{
     font-weight: 700;
@@ -261,9 +268,14 @@ ul{
     font-style: 14px;
     margin-left: 10px;
 }
-.about .btn-hire{
+.about .responsive-hide .btn-hire{
    margin-top: 25px;
    margin-right: 15px;
+}
+.about .responsive-show .btn-hire{
+   margin-top: 25px;
+   margin-right: 15px;
+   display: none;
 }
 /* about progress */
 .about .progress-bar-title{
@@ -352,13 +364,13 @@ ul{
 .service .service-item{
     background-color: var(--bg-black-100);
     text-align: center;
+    
     padding: 15px 10px;
     margin-bottom: 25px;
     box-shadow: 0 0 25px rgba(48, 46, 77, 0.15);
-    transition: all 0.3s ease-in;
 }
 .service .service-item:hover{
-    transform: scale(1.05);
+  
 }
 .service .service-item .service-name{
     text-transform: capitalize;
@@ -370,15 +382,133 @@ ul{
     font-size: 20px;
     background-color: var(--skin-color);
     color: white;
-    transition: all 0.6s ease-in;
+    transition: all 0.3s ease-in;
     margin-bottom: 10px;
 }
 .service .service-item:hover .icon{
     transform: rotate(45deg);
 }
 .service .service-item .icon i{
-    transition: all 0.6s ease-in;
+    transition: all 0.3s ease-in;
 }
 .service .service-item:hover .icon i{
     transform: rotate(-45deg);
+}
+
+/* ====== portfolio ============== */
+.portfolio .last-project-title{
+    display: block;
+    color: var(--text-black-900);
+    margin: 50px 0;
+    text-transform: capitalize;
+}
+.portfolio .portfolio-item{
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+.portfolio .portfolio-item img{
+    width: 100%;
+    transition: all 0.3s ease;
+}
+.portfolio .portfolio-item:hover img{
+    transform: scale(1.10);
+    
+}
+.portfolio .portfolio-item-overlay{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+.portfolio .portfolio-item h5{
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.portfolio .portfolio-item h5 a{
+    text-decoration: none;
+    color: white;
+}
+.portfolio .portfolio-item:hover .portfolio-item-overlay{
+    display: block;
+}
+.portfolio .portfolio-item:hover h5{
+    left: 50%;
+}
+
+/* ========== contact ========== */
+.contact .question{
+    text-align: center;
+    margin-top: 50px;
+}
+.contact .question h4{
+    color: var(--skin-color);
+    text-transform: capitalize;
+}
+.contact .question p{
+    color: var(--text-black-900);
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+/*       contact-item       */
+.contact .contact-item{
+    text-align: center;
+    padding: 10px 5px;
+    margin-top: 20px;
+}
+.contact .contact-item i{
+    color: var(--skin-color);
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.contact .contact-item h6{
+    color: var(--text-black-900);
+    
+}
+.contact .contact-item p{
+    color: var(--text-black-900);
+    font-size: 15px;
+}
+.contact .contact-item a{
+    color: var(--text-black-900);
+    font-size: 15px;
+    text-decoration: none;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+.contact .contact-item a:hover{
+    color: #0d6efd;
+}
+/*  contact form     */
+.contact .contact-form{
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.contact .contact-form input,
+.contact .contact-form textarea{
+    margin-bottom: 30px;
+    box-shadow: 0 0 25px rgba(48, 46, 77, 0.15);
+
+}
+/* ==== copyright====== */
+.copyright{
+    background-color: var(--text-black-700);
+    text-align: center;
+    padding: 7px;
+    color: white;
+    margin-bottom: 5px;
 }
