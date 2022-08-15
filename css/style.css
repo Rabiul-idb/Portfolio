@@ -35,15 +35,41 @@ ul{
     padding: 0;
 
 }
-.main-content{
+/* .main-content{
     padding-left: 270px;
-}
+} */
 .section{
     background: var(--bg-black-900);
     min-height: 100vh;
     display: block;
     opacity: 1;
     padding: 0 30px;
+    position: fixed;
+    left: 270px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: none;
+}
+.section.back-section{
+    z-index: 1;
+}
+.section.active{
+    display: block;
+    z-index: 2;
+    opacity: 1;
+    animation: slideSection 1s ease;
+}
+@keyframes slideSection {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
 }
 
 
