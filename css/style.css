@@ -15,6 +15,13 @@ body{
     /* font-family: 'Poppins', sans-serif; for font-family */
     overflow-x: hidden;
 }
+body.dark{
+    --bg-black-900:#151515;
+    --bg-black-100:#222222;
+    --bg-black-50:#393939;
+    --text-black-900:#ffffff;
+    --text-black-700:#e9e9e9;
+}
 *{
     margin: 0;
     padding: 0;
@@ -432,7 +439,7 @@ ul{
     top: 50%;
     left: -50%;
     transform: translate(-50%, -50%);
-    border: 2px solid white;
+    border: 2px solid var(--skin-color);
     padding: 5px;
     border-radius: 10px;
     transition: 1s;
