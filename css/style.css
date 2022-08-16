@@ -14,6 +14,7 @@ body{
     box-sizing: border-box;
     /* font-family: 'Poppins', sans-serif; for font-family */
     overflow-x: hidden;
+    background: var(--bg-black-900);
 }
 body.dark{
     --bg-black-900:#151515;
@@ -41,22 +42,23 @@ ul{
 .section{
     background: var(--bg-black-900);
     min-height: 100vh;
-    display: block;
+    display: none;
     opacity: 1;
     padding: 0 30px;
     position: fixed;
-    left: 270px;
+    left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     z-index: 0;
     overflow-y: auto;
     overflow-x: hidden;
-    display: none;
+    transition: all 0.3s ease;
 }
-.section.back-section{
-    z-index: 1;
+.section.side{
+    left: 270px;
 }
+
 .section.active{
     display: block;
     z-index: 2;
@@ -78,7 +80,7 @@ ul{
     width: 270px;
     background: var(--bg-black-100);
     position: fixed;
-    left: 0;
+    left: -270px;
     top: 0;
     height: 100%;
     padding: 30px;
@@ -87,6 +89,10 @@ ul{
     justify-content: center;
     align-items: center;
     border-right: 1px solid var(--bg-black-50);
+    transition: all 0.3s ease;
+}
+.aside-bar.open{
+    left: 0px;
 }
 .aside-bar .logo{
     position: absolute;
@@ -151,18 +157,36 @@ ul{
 }
 .aside-bar .nav-toggler {
     background-color: var(--bg-black-100);
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid var(--bg-black-50);
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     position: fixed;
-    left: 300px;
+    left: 20px;
     top: 20px;
-    font-size: 20px;
+    font-size: 25px;
     color: var(--skin-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
+.nav-toggler.open{
+    left: 275px;
+}
+.nav-toggler.open::after{
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    background-color: var(--bg-black-100);
+    border-left: 1px solid var(--bg-black-50);
+    border-bottom: 1px solid var(--bg-black-50);
+    right: 100%;
+    top: 50%;
+    transform: translate(50%,-50%) rotate(45deg);
+}
+
 
 /* ===========home section=========== */
 .home{
@@ -243,7 +267,7 @@ ul{
 }
 
 /* ================ about section =========== */
-.about{
+.about,.portfolio,.service,.contact{
     padding-top: 50px;
     
 }
