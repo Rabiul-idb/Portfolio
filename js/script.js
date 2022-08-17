@@ -22,6 +22,22 @@ $('.aside-bar ul li').click(function(){
     }
 });
 
+//================================================================
+
+    // hire btn click event
+$(".hireBtn").click(function(){
+    $(".aside-bar ul li").siblings().removeClass('active');
+    $('#forhireBtn').addClass("active");
+    $(".contact").addClass("active");
+});
+
+// portfolio btn click event
+$(".portfolioBtn").click(function(){
+    $(".aside-bar ul li").siblings().removeClass('active');
+    $('#forportfolioBtn').addClass("active");
+    $(".portfolio").addClass("active");
+});
+
 //==================================================================
 
 $(".nav-toggler").click(function(){
