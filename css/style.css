@@ -199,7 +199,7 @@ ul{
 .home .hello{
     font-family: 'EB Garamond', serif;
     font-weight: 700;
-    
+    color: var(--text-black-900);
 }
 .home .hello span{
     font-family: 'Clicker Script' , cursive;
@@ -209,6 +209,7 @@ ul{
 .home .profession{
     font-family: 'EB Garamond', serif;
     font-weight: 700;
+    color: var(--text-black-900);
 }
 .home .profession .typing{
     color: var(--skin-color);
@@ -278,6 +279,7 @@ ul{
     display: block;
     padding: 10px 12px;
     position: relative;
+    color: var(--text-black-900);
 }
 .contact .section-title h2::after,
 .about .section-title h2::after,
@@ -307,6 +309,9 @@ ul{
     margin-left: 12px;
     background-color: var(--skin-color);
 }
+.about .abt-title{
+    color: var(--text-black-700);
+}
 .about .abt-title span{
     color: var(--skin-color);
 }
@@ -315,9 +320,11 @@ ul{
     margin: 10px 0 20px 0;
     width: 80%;
 }
+
 .about .abt-item p{
     font-weight: 700;
     font-size: 16px;
+    color: var(--text-black-700);
 }
 .about .abt-item p span{
     color: var(--text-black-700);
@@ -338,6 +345,7 @@ ul{
 .about .progress-bar-title{
     margin-bottom: 5px;
     position: relative;
+    color: var(--text-black-700);
 }
 .about .progress-bar-title span{
     font-weight: 700;
@@ -364,6 +372,7 @@ ul{
 .about .experience{
     font-size: 20px;
     margin-bottom: 15px;
+    color: var(--text-black-900);
 }
 /* about education + experiences */
 .about .box{
@@ -399,11 +408,16 @@ ul{
 }
 .about .education-item .education-time{
     margin-right: 15px;
+    color: var(--text-black-900);
+}
+.about .education-item span{
+    color: var(--text-black-700);
 }
 .about .education-item .education-title{
     font-size: 17px;
     text-transform: capitalize;
     margin: 10px 0;
+    color: var(--text-black-900);
 }
 .about .education-item .education-details{
     color: var(--text-black-700);
@@ -415,16 +429,20 @@ ul{
 .about .education-item:last-child .education-details{
     border-bottom: none;
 }
+.about hr{
+    background-color: var(--text-black-700);
+}
 
 /* =========== service part ============ */
 
 .service .service-item{
     background-color: var(--bg-black-100);
     text-align: center;
-    
     padding: 15px 10px;
     margin-bottom: 25px;
     box-shadow: 0 0 25px rgba(48, 46, 77, 0.15);
+    min-height: 240px;
+    
 }
 .service .service-item:hover{
   
@@ -432,6 +450,7 @@ ul{
 .service .service-item .service-name{
     text-transform: capitalize;
     font-size: 18px;
+    color: var(--text-black-900);
 }
 .service .service-item .icon{
     display: inline-block;
@@ -450,6 +469,9 @@ ul{
 }
 .service .service-item:hover .icon i{
     transform: rotate(-45deg);
+}
+.service .service-item p{
+    color: var(--text-black-700);
 }
 
 /* ====== portfolio ============== */
@@ -566,6 +588,6 @@ ul{
     background-color: var(--text-black-700);
     text-align: center;
     padding: 7px;
-    color: white;
+    color: var(--bg-black-100);
     margin-bottom: 5px;
 }
