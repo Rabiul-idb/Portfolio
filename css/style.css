@@ -528,6 +528,37 @@ ul{
 }
 
 /* ========== contact ========== */
+/* hire option */
+
+.hire-option{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+.hire-option h3{
+    color: var(--text-black-900);
+}
+.hire-option a{
+    margin-left: 30px;
+}
+.hire-option .fiverr,
+.hire-option .upwork,
+.hire-option .linkedIn{
+    
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+.hire-option .fiverr{
+    background-color: #1DBF73;
+}
+.hire-option .upwork{
+    background-color: #6fda44;
+}
+.hire-option .linkedIn{
+    background-color: #0e76a8;
+}
+/* =============== */
 .contact .question{
     text-align: center;
     margin-top: 50px;
@@ -583,6 +614,7 @@ ul{
     box-shadow: 0 0 25px rgba(48, 46, 77, 0.15);
 
 }
+
 /* ==== copyright====== */
 .copyright{
     background-color: var(--text-black-700);
