@@ -3,7 +3,7 @@
 .style-switch{
     position: fixed;
     right: 0;
-    top: 30px;
+    top: 28px;
     padding: 15px;
     width: 200px;
     border: 1px solid var(--bg-black-50);

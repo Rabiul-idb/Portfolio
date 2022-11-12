@@ -52,7 +52,19 @@
      .about .experience{
          margin-top: 15px;
      }
-     
+     .hire-option{
+        display: block;
+     }
+     .hire_links{
+        margin-top: 30px;
+        margin-left: -30px
+     }
+     .hire-option .fiverr,
+     .hire-option .upwork,
+     .hire-option .linkedIn{
+        margin-bottom: 10px;
+   
+   }
 }
 
 @media screen and (max-width:575.98px){
