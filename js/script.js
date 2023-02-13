@@ -85,7 +85,7 @@ $(".nav-toggler").click(function(){
 // ============typing animation ==========
 
 const typed = new Typed(".typing",{
-    strings:["","web Designer","Frontend Developer","ui Designer"],
+    strings:["","web Designer","Frontend Developer","Freelancer"],
     typeSpeed:100,
     backSpeed:60,
     loop:true,
