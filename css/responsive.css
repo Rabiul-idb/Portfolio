@@ -30,8 +30,13 @@
 }
 
 @media screen and (max-width:767.98px){
-    .home .image{
+    .home .hireBtn{
         display: none;
+    }
+    .home .mobile_view{
+        display: inline-block;
+        margin-top: 60px;
+        margin-bottom: 50px;
     }
     .home p{
         padding-right: 50px;

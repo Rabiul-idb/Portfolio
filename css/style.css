@@ -235,6 +235,9 @@ ul{
     transform: scale(1.08);
     color: white;
 }
+.home .mobile_view{
+    display: none;
+}
 .image{
   text-align: center;
   position: relative;
